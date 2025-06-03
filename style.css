@@ -208,4 +208,7 @@ section {
     width: 120px;
     height: auto;
   }
+  .about-text {
+  flex: 1;
+}
 }
