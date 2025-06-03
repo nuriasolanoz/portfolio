@@ -86,3 +86,30 @@ ul li {
     transform: scale(1.05);
 }
   
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #e84393, #00b894);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #fd79a8, #2ecc40);
+    transform: scale(1.05);
+}

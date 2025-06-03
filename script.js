@@ -1,1 +1,3 @@
-console.log("Welcome to my portfolio site!");
+window.onload = function () {
+    alert("Thanks for visiting my portfolio!");
+  };

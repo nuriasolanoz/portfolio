@@ -8,32 +8,34 @@
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 
   <main>
     <h1>Contact Me</h1>
     <p>If you'd like to get in touch, feel free to fill out the form below or connect with me through GitHub.</p>
 
-    <form>
+    <form action="#" method="GET">
       <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br /><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
       <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
       <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5"></textarea><br /><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
 
       <input type="submit" value="Send" />
     </form>
 
     <h2>Other Ways to Reach Me</h2>
     <ul>
-      <li>Email: <a href="mailto:heliasolzat@gmail.com">your-email@example.com</a></li>
+      <li>Email: <a href="mailto:heliasolzat@gmail.com">heliasolzat@gmail.com</a></li>
       <li>GitHub: <a href="https://github.com/nuriasolanoz" target="_blank">github.com/nuriasolanoz</a></li>
     </ul>
   </main>
