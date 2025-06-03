@@ -234,4 +234,8 @@ section {
         max-width: 80vw;
         max-height: 80vw;
     }
+    img[src="profile.jpg"] {
+  width: 120px;
+  height: auto;
+}
 }
