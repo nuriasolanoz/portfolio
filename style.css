@@ -1,58 +1,88 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background: linear-gradient(135deg, #e84393 0%, #2ecc40 100%);
+    color: #222;
     padding: 20px;
-  }
-  
-  /* Navigation Bar */
-  nav {
-    background-color: #333;
-    padding: 10px;
-    margin-bottom: 20px;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #00b894 0%, #6c5ce7 100%);
+    padding: 12px 0;
+    margin-bottom: 24px;
     text-align: center;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Page Content */
-  main {
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2 {
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.08);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+nav a:hover {
+    color: #f6e58d;
+    text-shadow: 0 2px 8px #fd79a8;
+}
+
+/* Page Content */
+main {
+    max-width: 850px;
+    margin: auto;
+    background: linear-gradient(120deg, #fab1a0 0%, #f6e58d 100%);
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24px rgba(232, 67, 147, 0.12);
+}
+
+h1, h2 {
     margin-bottom: 15px;
-    color: #444;
-  }
-  
-  p, ul {
-    margin-bottom: 20px;
-  }
-  
-  ul {
+    color: #00b894;
+    text-shadow: 0 2px 8px #fd79a8;
+}
+
+p, ul {
+    margin-bottom: 22px;
+}
+
+ul {
     list-style-type: disc;
-    padding-left: 20px;
-  }
+    padding-left: 24px;
+}
+
+ul li {
+    color: #6c5ce7;
+    font-weight: 500;
+}
+
+/* Example of a colorful button */
+.button {
+    background: linear-gradient(90deg, #e84393, #00b894);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 18px rgba(46, 204, 64, 0.13);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #fd79a8, #2ecc40);
+    transform: scale(1.05);
+}
   
