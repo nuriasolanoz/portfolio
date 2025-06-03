@@ -165,10 +165,4 @@ textarea:focus {
   display: inline-block;
   margin-right: 20px;
 }
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 }
