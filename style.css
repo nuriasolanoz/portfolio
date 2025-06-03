@@ -91,7 +91,7 @@ ul li {
 
 /* Button Styling */
 .button, input[type="submit"] {
-  background: linear-gradient(90deg, #6B4226 0%, #708238 100%);
+  background-color: #6B4226; /* Solid brown */
   color: #FFFBEF;
   border: none;
   padding: 12px 32px;
@@ -100,14 +100,15 @@ ul li {
   cursor: pointer;
   margin-top: 10px;
   box-shadow: 0 4px 12px rgba(107, 66, 38, 0.12);
-  transition: background 0.26s, transform 0.18s;
+  transition: background-color 0.26s, transform 0.18s;
 }
 
 .button:hover, input[type="submit"]:hover {
-  background: linear-gradient(90deg, #708238 0%, #6B4226 100%);
-  color: #F4C2C2;
+  background-color: #708238; /* Olive green on hover */
+  color: #FFFBEF;
   transform: translateY(-2px) scale(1.03);
 }
+
 
 /* Form Inputs */
 input[type="text"],
