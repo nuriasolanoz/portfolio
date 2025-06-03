@@ -179,12 +179,16 @@ section {
     line-height: 1.7;
 }
 
+/* Profile Photo Styling */
 .profile-photo {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
+    max-width: 40vw;
+    max-height: 40vw;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: block;
 }
 
 /* Responsive Spacing */
@@ -206,13 +210,16 @@ section {
         display: inline-block;
         margin-right: 20px;
     }
-    .about-me-card {
+    .about-me-card, .project-card {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
+        gap: 1rem;
     }
     .profile-photo {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
+        max-width: 80vw;
+        max-height: 80vw;
     }
 }
