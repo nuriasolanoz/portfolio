@@ -193,12 +193,10 @@ section {
     border-radius: 12px;
   }
 
-  .about-me-card, .project-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    gap: 1rem;
-  }
+ .about-me-card, .project-card {
+  max-width: 1000px; /* widen the card */
+  width: 100%;
+}
 
   .profile-photo {
     width: 80px;
