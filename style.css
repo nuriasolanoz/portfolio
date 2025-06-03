@@ -28,11 +28,20 @@ nav {
     border-radius: 0 0 12px 12px;
 }
 
-/* Navigation Links */
-nav a {
+/* Make nav links horizontal */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
     color: #0077b6; /* Blue accent */
     text-decoration: none;
-    margin: 0 30px;
     font-weight: 600;
     font-size: 1.15em;
     letter-spacing: 1px;
@@ -40,8 +49,8 @@ nav a {
     position: relative;
 }
 
-nav a:hover,
-nav a:focus {
+nav ul li a:hover,
+nav ul li a:focus {
     color: #ffb703; /* Gold accent on hover/focus */
     text-shadow: 0 2px 6px #f5f6fa;
 }
@@ -206,28 +215,12 @@ section {
         gap: 8px;
         margin-left: 0;
     }
-    nav ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
     .about-me-card, .project-card {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
         gap: 1rem;
     }
- .profile-photo {
-    width: 120px;
-    height: 120px;
-    max-width: 40vw;
-    max-height: 40vw;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    display: block;
-}
-
-@media (max-width: 700px) {
     .profile-photo {
         width: 80px;
         height: 80px;
@@ -235,7 +228,7 @@ section {
         max-height: 80vw;
     }
     img[src="profile.jpg"] {
-  width: 120px;
-  height: auto;
-}
+        width: 120px;
+        height: auto;
+    }
 }
