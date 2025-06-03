@@ -149,7 +149,6 @@ section {
   max-width: 900px; /* more room for horizontal layout */
   margin: 2rem auto;
   display: flex;
-  flex-direction: row;  /* ⬅️ THIS is the key change */
   align-items: center;
   gap: 2rem;
 }
