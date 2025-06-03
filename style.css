@@ -7,21 +7,21 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    background: #B0B8B4FF; /* New soft gray/green */
-    color: #184A45FF;       /* Deep green for base text */
+    background: #FFFDEB; /* Cream white */
+    color: #DC3E26;       /* Red for base text */
     min-height: 100vh;
     padding: 0 0 40px 0;
 }
 
 /* Navigation Bar */
 nav {
-    background: #184A45FF; /* Deep green */
+    background: #81CAD6; /* Blue */
     padding: 18px 6vw;
     margin-bottom: 36px;
     width: 100vw;
     left: 0;
     position: relative;
-    box-shadow: 0 2px 14px rgba(24,74,69, 0.08);
+    box-shadow: 0 2px 14px rgba(129,202,214, 0.08); /* Blue shadow */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #FC766AFF; /* Coral accent */
+    color: #DC3E26; /* Red accent */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.15em;
@@ -52,8 +52,8 @@ nav ul li a {
 /* Nav link hover/focus */
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #B0B8B4FF; /* Soft gray/green on hover */
-    text-shadow: 0 2px 6px #FC766AFF;
+    color: #EDCD44; /* Yellow on hover */
+    text-shadow: 0 2px 6px #DC3E26;
 }
 
 /* Horizontal Submenu for Projects */
@@ -68,7 +68,7 @@ nav .submenu {
 nav .submenu a {
     margin: 0;
     font-size: 1em;
-    color: #FC766AFF;
+    color: #DC3E26;
     padding: 2px 10px;
     border-radius: 6px;
     background: none;
@@ -76,8 +76,8 @@ nav .submenu a {
 }
 
 nav .submenu a:hover {
-    background: #B0B8B4FF;
-    color: #184A45FF;
+    background: #EDCD44;
+    color: #DC3E26;
 }
 
 /* Main Content Area */
@@ -85,17 +85,17 @@ main {
     width: 90vw;
     max-width: 1060px;
     margin: 0 auto;
-    background: #fff; /* White for max contrast */
+    background: #FFFDEB; /* Cream white */
     padding: 48px 48px 40px 48px;
     border-radius: 32px;
-    box-shadow: 0px 8px 32px rgba(24,74,69,0.06);
+    box-shadow: 0px 8px 32px rgba(129,202,214,0.06);
 }
 
 /* Headings */
 h1, h2, h3 {
     margin-bottom: 16px;
-    color: #184A45FF; /* Deep green */
-    text-shadow: 0 1px 5px #B0B8B4FF;
+    color: #81CAD6; /* Blue */
+    text-shadow: 0 1px 5px #EDCD44; /* Yellow shadow */
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -103,7 +103,7 @@ h1, h2, h3 {
 /* Paragraphs and Lists */
 p, ul {
     margin-bottom: 22px;
-    color: #184A45FF;
+    color: #DC3E26;
 }
 
 ul {
@@ -112,27 +112,27 @@ ul {
 }
 
 ul li {
-    color: #FC766AFF;
+    color: #EDCD44;
     font-weight: 500;
 }
 
 /* Button Styling */
 .button, input[type="submit"] {
-    background: linear-gradient(90deg, #FC766AFF 0%, #184A45FF 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #81CAD6 0%, #EDCD44 100%);
+    color: #DC3E26;
     border: none;
     padding: 12px 32px;
     border-radius: 26px;
     font-size: 1.02em;
     cursor: pointer;
     margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(24,74,69,0.09);
+    box-shadow: 0 4px 12px rgba(220,62,38,0.09);
     transition: background 0.26s, transform 0.18s;
 }
 
 .button:hover, input[type="submit"]:hover {
-    background: linear-gradient(90deg, #184A45FF 0%, #FC766AFF 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #EDCD44 0%, #81CAD6 100%);
+    color: #DC3E26;
     transform: translateY(-2px) scale(1.03);
 }
 
@@ -143,24 +143,24 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 18px;
-    border: 1px solid #184A45FF;
+    border: 1px solid #81CAD6;
     border-radius: 10px;
     font-size: 1em;
-    background: #fff;
-    color: #184A45FF;
+    background: #FFFDEB;
+    color: #DC3E26;
     transition: border 0.18s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border: 1.5px solid #FC766AFF;
+    border: 1.5px solid #EDCD44;
     outline: none;
 }
 
-/* Section styling for soft gray/green backgrounds */
+/* Section styling for backgrounds */
 section {
-    background: #B0B8B4FF;
+    background: #81CAD6;
     padding: 2rem 0;
     margin-bottom: 2rem;
     border-radius: 12px;
@@ -168,9 +168,9 @@ section {
 
 /* Card Styling for About Me or Projects */
 .about-me-card, .project-card {
-    background: #fff; /* White for cards */
+    background: #FFFDEB; /* Cream white for cards */
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(129,202,214,0.08);
     padding: 2rem;
     max-width: 700px;
     margin: 2rem auto;
@@ -197,7 +197,7 @@ section {
     max-height: 40vw;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(129,202,214,0.10);
     display: block;
 }
 
