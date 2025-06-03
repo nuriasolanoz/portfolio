@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(120deg, #bfd8d2 0%, #fedcd2 100%);
+    background: #fff; /* White background */
     color: #222;
     min-height: 100vh;
     padding: 0 0 40px 0;
@@ -15,21 +15,22 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: linear-gradient(90deg, #57bc90 0%, #dcb239 100%);
+    background: #f5f6fa; /* Soft grey */
     padding: 18px 6vw;
     margin-bottom: 36px;
     width: 100vw;
     left: 0;
     position: relative;
-    box-shadow: 0 2px 14px rgba(87, 188, 144, 0.10);
+    box-shadow: 0 2px 14px rgba(0, 119, 182, 0.08);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 12px 12px;
 }
 
+/* Navigation Links */
 nav a {
-    color: #df744a;
+    color: #0077b6; /* Blue accent */
     text-decoration: none;
     margin: 0 30px;
     font-weight: 600;
@@ -41,8 +42,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #dcb239;
-    text-shadow: 0 2px 6px #fedcd2;
+    color: #ffb703; /* Gold accent on hover/focus */
+    text-shadow: 0 2px 6px #f5f6fa;
 }
 
 /* Horizontal Submenu for Projects */
@@ -57,7 +58,7 @@ nav .submenu {
 nav .submenu a {
     margin: 0;
     font-size: 1em;
-    color: #57bc90;
+    color: #0077b6;
     padding: 2px 10px;
     border-radius: 6px;
     background: none;
@@ -65,25 +66,26 @@ nav .submenu a {
 }
 
 nav .submenu a:hover {
-    background: #bfd8d2;
-    color: #df744a;
+    background: #f5f6fa;
+    color: #ffb703;
 }
 
+/* Main Content Area */
 main {
     width: 90vw;
     max-width: 1060px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #fedcd2 0%, #bfd8d2 100%);
+    background: #f5f6fa; /* Soft grey */
     padding: 48px 48px 40px 48px;
     border-radius: 32px;
-    box-shadow: 0px 8px 32px rgba(223, 116, 74, 0.06);
+    box-shadow: 0px 8px 32px rgba(0,119,182,0.06);
 }
 
 /* Headings */
 h1, h2, h3 {
     margin-bottom: 16px;
-    color: #df744a;
-    text-shadow: 0 1px 5px #fedcd2;
+    color: #0077b6; /* Blue accent */
+    text-shadow: 0 1px 5px #f5f6fa;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -100,13 +102,13 @@ ul {
 }
 
 ul li {
-    color: #57bc90;
+    color: #0077b6;
     font-weight: 500;
 }
 
 /* Button Styling */
 .button, input[type="submit"] {
-    background: linear-gradient(90deg, #df744a 0%, #dcb239 100%);
+    background: linear-gradient(90deg, #0077b6 0%, #ffb703 100%);
     color: #fff;
     border: none;
     padding: 12px 32px;
@@ -114,13 +116,13 @@ ul li {
     font-size: 1.02em;
     cursor: pointer;
     margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(223, 116, 74, 0.09);
+    box-shadow: 0 4px 12px rgba(0,119,182,0.09);
     transition: background 0.26s, transform 0.18s;
 }
 
 .button:hover, input[type="submit"]:hover {
-    background: linear-gradient(90deg, #dcb239 0%, #57bc90 100%);
-    color: #df744a;
+    background: linear-gradient(90deg, #ffb703 0%, #0077b6 100%);
+    color: #222;
     transform: translateY(-2px) scale(1.03);
 }
 
@@ -131,7 +133,7 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 18px;
-    border: 1px solid #bfd8d2;
+    border: 1px solid #0077b6;
     border-radius: 10px;
     font-size: 1em;
     background: #fff;
@@ -142,8 +144,47 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border: 1.5px solid #57bc90;
+    border: 1.5px solid #ffb703;
     outline: none;
+}
+
+/* Section styling for soft grey backgrounds */
+section {
+    background: #f5f6fa;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+
+/* Card Styling for About Me or Projects */
+.about-me-card, .project-card {
+    background: #fff; /* White for cards */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-me-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-card p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 /* Responsive Spacing */
@@ -162,34 +203,16 @@ textarea:focus {
         margin-left: 0;
     }
     nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .about-me-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
 }
-.about-me-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 2rem;
-  max-width: 700px;
-  margin: 2rem auto;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.about-me-card h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-.about-me-card p {
-  font-size: 1.25rem;
-  line-height: 1.7;
-}
-.profile-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-}
-}
-body { font-family: 'Roboto', Arial, sans-serif; }
